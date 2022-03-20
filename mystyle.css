@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+
+p {
+    color: yellow;
+    font-size: 20px;
+}
+
+header {
+    color: blue;
+    background-color: darkred ;
+    text-align: center;
+    flex: auto;
+}
+footer{
+    clear: both;
+    color: blue;
+    background-color: darkred ;
+    text-align: center;
+    flex: auto;
+}
+/*#leweLogo {*/
+/*    : left;*/
+/*}*/
+
+/*#praweLogo {*/
+/*    align: right;*/
+/*}*/
+nav {
+    float: left;
+    width: 30%;
+    height: 600px;
+    background-color: yellow;
+    padding: 20px;
+    color: red;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: blue;
+}
+
+article p {
+    color: red;
+}
+
+table{
+    color: yellow;
+}
+th {
+    border:1px solid #C0C0C0;
+    padding:5px;
+    background-color: darkblue;
+}
+td {
+    border:1px solid #C0C0C0;
+    padding:5px;
+}
+.left {
+    display: block;
+    margin-left: 0px;
+    margin-right: auto;
+    width: 10%;
+
+
+}
+
+.right {
+    display: block;
+    margin-left: auto;
+    margin-right: 0px;
+    width: 10%;
+}
