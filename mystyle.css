@@ -11,35 +11,24 @@ header {
     color: blue;
     background-color: darkred ;
     text-align: center;
-    flex: auto;
+    padding: 30px;
+    font-size: 35px;
 }
-footer{
-    clear: both;
-    color: blue;
-    background-color: darkred ;
-    text-align: center;
-    flex: auto;
-}
-/*#leweLogo {*/
-/*    : left;*/
-/*}*/
 
-/*#praweLogo {*/
-/*    align: right;*/
-/*}*/
+section {
+    display: flex;
+}
+
+
 nav {
-    float: left;
-    width: 30%;
-    height: 600px;
+    flex: 1;
     background-color: yellow;
     padding: 20px;
     color: red;
 }
 
 article {
-    float: left;
-    padding: 20px;
-    width: 70%;
+    flex: 3;
     background-color: blue;
 }
 
@@ -73,4 +62,20 @@ td {
     margin-left: auto;
     margin-right: 0px;
     width: 10%;
+}
+section::after {
+    display: table;
+    clear: both;
+}
+footer{
+    color: blue;
+    background-color: darkred ;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    section {
+        flex-direction: column;
+    }
 }
